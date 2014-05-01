@@ -1,0 +1,56 @@
+
+.col-md-4 {
+	width: 25% !important;
+	margin-left: 0pt !important;
+	-webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+.col-md-12 {
+	margin-left: 0pt !important;
+	-webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+ .menuWide
+{
+    width: 220px !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+.icon-bullhorn-ie7 {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/bullhorn.png);
+	background-repeat: no-repeat;
+}
+.icon-bullhorn-ie7 {
+	background-position: 0 0;
+}
+
+.icon-star-ie7 {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/star.png);
+	background-repeat: no-repeat;
+}
+.icon-star-ie7 {
+	background-position: 0 0;
+}
+
+.icon-calendar-ie7 {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/calendar.png);
+	background-repeat: no-repeat;
+}
+.icon-calendar-ie7 {
+	background-position: 0 0;
+}
