@@ -228,13 +228,10 @@ margin-left:10px;
    height: auto;
 }
 
-.carousel-indicators {
-  position: relative;
-}
-
-.carousel {
+.headCarousel {
+  padding-top: 54px;
     /*height: 400px;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .carousel .item {
