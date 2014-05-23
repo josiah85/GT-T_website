@@ -287,3 +287,26 @@ margin-left:10px;
 .well-lg {
   padding: 0px;
 }
+
+.cellman {
+  bottom: 0;
+  left: -17px;
+  width: 260px;
+}
+
+.cellmanText {
+  position: absolute;
+  top: 0px;
+  padding-top: 2em;
+  padding-left: 280px;
+  padding-right: 1em;
+  line-height: 1.4;
+  margin-right: 30px;
+}
+
+.cellmanBtn {
+  position: absolute;
+  top: 0px;
+  margin-left: 300px;
+  margin-top: 300px;
+}
