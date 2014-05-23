@@ -251,3 +251,39 @@ margin-left:10px;
     opacity:1;
     z-index:1;
 }
+
+.carousel-indicators {
+  bottom: -30px;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+  margin: 0px 1em;
+  width: 1em;
+  height: 1em;
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+  margin: 0px 1em;
+  width: 1em;
+  height: 1em;
+}
+
+@font-face {
+    font-family: 'GeosansLight';
+    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    font-weight:400;
+}
+
+.carousel-caption {
+  font-family: GeosansLight, Helvetica, Arial, sans-serif;
+  padding: 0px;
+  top: 0%;
+  right: -7%;
+}
+
+.well-lg {
+  padding: 0px;
+}

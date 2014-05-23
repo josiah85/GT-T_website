@@ -185,26 +185,32 @@
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
         <div class="item active">
-          <img src="img/HiRes_middle.jpg" alt="...">
+          <img src="img/ny_test.png" alt="...">
           <div class="carousel-caption">
-            <h1>No subscription fee for roaming!</h1>
-            <h2>Pay only $72 per minute while roaming in Canada or USA.</h2>
-            <p><a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#jumbModal">More info <span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+            <!--<h2 id="fittext2"><b>No subscription fee for roaming!</b><br/>Pay only $72 per minute<br/>while roaming in Canada or USA.</h2>-->
+            <!--<p><a id="fittext1" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#jumbModal">More info <span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>-->
           </div>
         </div>
         <div class="item">
-          <img src="img/HiRes_right.jpg" alt="...">
+          <img src="img/train_test.png" alt="...">
           <div class="carousel-caption">
             ...
           </div>
         </div>
         <div class="item">
-          <img src="img/HiRes_left.jpg" alt="...">
+          <img src="img/HiRes_middle.jpg" alt="...">
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/9860_test.png" alt="...">
           <div class="carousel-caption">
             ...
           </div>
@@ -287,45 +293,52 @@
       </div> <!-- /.row -->
       <div class="row">
           <div class="col-md-12">
-            <div id="tour" class="carousel slide well well-sm">
-              <!--<ol class="carousel-indicators">
+
+            <div class="well well-lg"><img src="img/cellman.jpg" class="img-responsive" alt="Responsive image">
+              <p>We give you choices because we recognize that one size never fits all. You know your lifestyle and understand your calling patterns. So, choose the right plan for you and save!</p>
+
+            </div>
+
+            <!--<div id="tour" class="carousel slide well well-sm">
+
+              <ol class="carousel-indicators">
                 <li data-target="#tour" data-slide-to="0" class="active"></li>
                 <li data-target="#tour" data-slide-to="1"></li>
                 <li data-target="#tour" data-slide-to="2"></li>
                 <li data-target="#tour" data-slide-to="3"></li>
                 <li data-target="#tour" data-slide-to="4"></li>
-              </ol>-->
+              </ol>
 
               <div class="carousel-inner">
                 <div class="item">
                   <img alt="" src="img/slides/80drop.jpg">
-                  <!--<div class="carousel-caption">
-                  </div>-->
+                  <div class="carousel-caption">
+                  </div>
                 </div>
                 <div class="item active">
                   <img alt="" src="img/slides/after2.jpg">
-                  <!--<div class="carousel-caption">
-                  </div>-->
+                  <div class="carousel-caption">
+                  </div>
                 </div>
                 <div class="item">
                   <img alt="" src="img/slides/dslspeeds.jpg">
-                  <!--<div class="carousel-caption">
-                  </div>-->
+                  <div class="carousel-caption">
+                  </div>
                 </div>
                 <div class="item">
                   <img alt="" src="img/slides/gttislide.jpg">
-                  <!--<div class="carousel-caption">
-                  </div>-->
+                  <div class="carousel-caption">
+                  </div>
                 </div>
                 <div class="item">
                   <img alt="" src="img/slides/janroam11.jpg">
-                  <!--<div class="carousel-caption">
-                  </div>-->
+                  <div class="carousel-caption">
+                  </div>
                 </div>
                 <div class="item">
                   <img alt="" src="img/slides/support0488.jpg">
-                  <!--<div class="carousel-caption">
-                  </div>-->
+                  <div class="carousel-caption">
+                  </div>
                 </div>
                 <div class="item">
                   <a href="https://www.ezetop.com/countries/south-america/guyana/cellink"><img alt="" src="img/slides/ezeetop.jpg"></a>
@@ -340,7 +353,7 @@
               <a class="right carousel-control" href="#tour" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right"></span>
               </a>
-            </div> <!-- #tour -->
+            </div>--> <!-- #tour -->
           </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->
@@ -391,6 +404,14 @@
         $("html,body").animate({scrollTop: $(href).offset().top - 80}, 500);
         link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
       });
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script type="text/javascript">
+      $("#fittext1").fitText();
+      $("#fittext2").fitText(2.1);
+      $("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
     </script>
 
   </body>
