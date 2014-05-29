@@ -19,29 +19,31 @@
     <script src="js/jquery.min.js"></script>
     <!--Cross browser text resizing-->
     <script type="text/javascript">
-      if (!Array.prototype.filter)
-      {
-        Array.prototype.filter = function(fun /*, thisp*/)
+      $(document).ready(function() {
+        if (!Array.prototype.filter)
         {
-          var len = this.length;
-          if (typeof fun != "function")
-            throw new TypeError();
-
-          var res = new Array();
-          var thisp = arguments[1];
-          for (var i = 0; i < len; i++)
+          Array.prototype.filter = function(fun /*, thisp*/)
           {
-            if (i in this)
-            {
-              var val = this[i]; // in case fun mutates this
-              if (fun.call(thisp, val, i, this))
-                res.push(val);
-            }
-          }
+            var len = this.length;
+            if (typeof fun != "function")
+              throw new TypeError();
 
-          return res;
-        };
-      }
+            var res = new Array();
+            var thisp = arguments[1];
+            for (var i = 0; i < len; i++)
+            {
+              if (i in this)
+              {
+                var val = this[i]; // in case fun mutates this
+                if (fun.call(thisp, val, i, this))
+                  res.push(val);
+              }
+            }
+
+            return res;
+          };
+        }
+      });
     </script>
     <script src="js/vminpoly_parser_tokenizer.min.js"></script>
   </head>
