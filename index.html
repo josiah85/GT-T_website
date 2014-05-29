@@ -198,19 +198,20 @@
           </div>
         </div>
         <div class="item">
-          <img src="img/retro_banner_blue.png" alt="...">
+          <img src="img/retro_banner_blue_TEMPLATE.png" alt="...">
+          <div class="carousel-caption">
+            <div class="retro_banner_text"><b>BlackBerry® Torch</b><br/>9860</div>
+            <img src="img/9860-rightangle.png" class="img-responsive retro_banner_cell" alt="Responsive image">
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/antique_banner_dark_TEMPLATE.png" alt="...">
           <div class="carousel-caption">
             ...
           </div>
         </div>
         <div class="item">
-          <img src="img/antique_banner_dark.png" alt="...">
-          <div class="carousel-caption">
-            ...
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/blue_banner.png" alt="...">
+          <img src="img/blue_banner_TEMPLATE.png" alt="...">
           <div class="carousel-caption">
             ...
           </div>
@@ -235,7 +236,7 @@
             <h4 class="modal-title" id="jumbModalLabel"></h4>
           </div>
           <div class="modal-body">
-            <img src="img/roam4free3.png" class="img-responsive center-block">
+            <!--<img src="img/roam4free3.png" class="img-responsive center-block">-->
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -413,6 +414,36 @@
       $("#fittext2").fitText(2.1);
       $("#fittext3").fitText(1.4, { minFontSize: '5px', maxFontSize: '20px' });
     </script>
+
+    <!--Cross browswer text resizing-->
+    <script type="text/javascript">
+      if (!Array.prototype.filter)
+      {
+        Array.prototype.filter = function(fun /*, thisp*/)
+        {
+          var len = this.length;
+          if (typeof fun != "function")
+            throw new TypeError();
+
+          var res = new Array();
+          var thisp = arguments[1];
+          for (var i = 0; i < len; i++)
+          {
+            if (i in this)
+            {
+              var val = this[i]; // in case fun mutates this
+              if (fun.call(thisp, val, i, this))
+                res.push(val);
+            }
+          }
+
+          return res;
+        };
+      }
+    </script>
+    <script src="js/tokenizer.js"></script>
+    <script src="js/parser.js"></script>
+    <script src="js/vminpoly.js"></script>
 
   </body>
 </html>
