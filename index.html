@@ -193,8 +193,8 @@
         <div class="item active">
           <img src="img/ny_banner_roaming.png" alt="...">
           <div class="carousel-caption">
-            <!--<h2 id="fittext2"><b>No subscription fee for roaming!</b><br/>Pay only $72 per minute<br/>while roaming in Canada or USA.</h2>-->
-            <!--<p><a id="fittext1" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#jumbModal">More info <span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>-->
+            <!--<h2><b>No subscription fee for roaming!</b><br/>Pay only $72 per minute<br/>while roaming in Canada or USA.</h2>-->
+            <!--<p><a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#jumbModal">More info <span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>-->
           </div>
         </div>
         <div class="item">
@@ -296,7 +296,7 @@
           <div class="col-md-12">
 
             <div class="well well-lg"><img src="img/cellman.jpg" class="img-responsive cellman" alt="Responsive image">
-              <h3 id="fittext3" class="cellmanText"><strong>We give you choices because we recognize that one size never fits all.</strong><br/>You know your lifestyle and understand your calling patterns. So, choose the right plan for you and save!</h3>
+              <h3 class="cellmanText"><strong>We give you choices because we recognize that one size never fits all.</strong><br/>You know your lifestyle and understand your calling patterns. So, choose the right plan for you and save!</h3>
               <p><a class="btn btn-primary btn-lg cellmanBtn" href="http://www.gtt.co.gy/?page=mobile">Plans <span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
             </div>
 
@@ -408,42 +408,9 @@
     </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script type="text/javascript">
-      $("#fittext1").fitText();
-      $("#fittext2").fitText(2.1);
-      $("#fittext3").fitText(1.4, { minFontSize: '5px', maxFontSize: '20px' });
-    </script>
 
     <!--Cross browswer text resizing-->
-    <script type="text/javascript">
-      if (!Array.prototype.filter)
-      {
-        Array.prototype.filter = function(fun /*, thisp*/)
-        {
-          var len = this.length;
-          if (typeof fun != "function")
-            throw new TypeError();
-
-          var res = new Array();
-          var thisp = arguments[1];
-          for (var i = 0; i < len; i++)
-          {
-            if (i in this)
-            {
-              var val = this[i]; // in case fun mutates this
-              if (fun.call(thisp, val, i, this))
-                res.push(val);
-            }
-          }
-
-          return res;
-        };
-      }
-    </script>
-    <script src="js/tokenizer.js"></script>
-    <script src="js/parser.js"></script>
-    <script src="js/vminpoly.js"></script>
+    <script src="js/vminpoly_parser_tokenizer.min.js"></script>
 
   </body>
 </html>
