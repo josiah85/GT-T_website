@@ -16,7 +16,6 @@
     <!--[if lt IE 8]>
       <link rel="stylesheet" type="text/css" media="screen" href="css/style-ie7.css"  />
     <![endif]-->
-    <script src="js/jquery.min.js"></script>
   </head>
   <body>
 
@@ -397,21 +396,6 @@
       </div> <!-- /.container -->
     </footer>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.carousel').carousel({interval: 8000});
-      });
-    </script>
-    <script>
-      $(".nav-link").click(function(e) {
-        e.preventDefault();
-        var link = $(this);
-        var href = link.attr("href");
-        $("html,body").animate({scrollTop: $(href).offset().top - 80}, 500);
-        link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
-      });
-    </script>
     <!--Cross browser text resizing-->
     <script type="text/javascript">
       if (!Array.prototype.filter)
@@ -442,5 +426,21 @@
     <script src="js/tokenizer.js"></script>
     <script src="js/parser.js"></script>
     <script src="js/vminpoly.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.carousel').carousel({interval: 8000});
+      });
+    </script>
+    <script>
+      $(".nav-link").click(function(e) {
+        e.preventDefault();
+        var link = $(this);
+        var href = link.attr("href");
+        $("html,body").animate({scrollTop: $(href).offset().top - 80}, 500);
+        link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
+      });
+    </script>
   </body>
 </html>
