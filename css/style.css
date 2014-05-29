@@ -270,29 +270,30 @@ margin-left:10px;
 .carousel-indicators li {
   background-color: #999;
   background-color: rgba(70,70,70,.25);
-  margin: 0px 1em;
+  margin: 0px 0.8em;
   width: 1em;
   height: 1em;
 }
 
 .carousel-indicators .active {
   background-color: #444;
-  margin: 0px 1em;
+  margin: 0px 0.8em;
   width: 1em;
   height: 1em;
 }
 
 @font-face {
-    font-family: 'GeosansLight';
-    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    font-family: 'BEBAS';
+    src: url(../fonts/BEBAS___.ttf);
     font-weight:400;
 }
 
 .carousel-caption {
-  font-family: GeosansLight, Helvetica, Arial, sans-serif;
+  font-family: BEBAS, Helvetica, Arial, sans-serif;
   padding: 0px;
   top: 0%;
   right: -8%;
+  left: 0;
 }
 
 .well-lg {
@@ -317,21 +318,43 @@ margin-left:10px;
 .cellmanBtn {
   position: relative;
   top: 50%;
+  width: 17vmin;
+  height: 5vmin;
+  font-size: 2.5vmin;
+  padding-top: 1%;
 }
 
 .retro_banner_cell {
-  margin-left: 50%;
+  margin-left: 60%;
   height: 90%;
-  margin-top: 5%;
+  margin-top: 4%;
 }
 
 .retro_banner_text {
   position: absolute;
-  margin-top: 5%;
+  margin-top: 4%;
   font-size: 6vmin;
   text-align: left;
   width: 60vmin;
   height: 20vmin;
+  margin-left: 10%;
+
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 5px 5px 5px rgba(0,0,0,0.004);
+}
+
+.retro_banner_subtext {
+  font-size: 2.5vmin;
+}
+
+.retro_banner_button {
+  margin-left: 70%;
+  margin-top: -14%;
+  color: navajowhite;
+  width: 15vmin;
+  height: 5vmin;
+  font-size: 2vmin;
+  padding-top: 1%;
 }
 
 .btndiv {
