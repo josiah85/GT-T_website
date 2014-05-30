@@ -302,27 +302,6 @@ footer {
   height: 1em;
 }
 
-@font-face {
-    font-family: 'BEBAS';
-    src: url(../fonts/BEBAS___.ttf);
-    font-weight:400;
-}
-
-@font-face {
-    font-family: 'NeonGlow';
-    src: url(../fonts/NeonGlow.ttf);
-}
-
-@font-face {
-    font-family: 'NeonGlow-ie';
-    src: url(../fonts/NeonGlow.eot);
-}
-
-@font-face {
-    font-family: 'SinkinSans-100Thin';
-    src: url(../fonts/SinkinSans-100Thin.otf);
-}
-
 .carousel-caption {
   padding: 0px;
   top: 0%;
