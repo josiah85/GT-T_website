@@ -1,6 +1,7 @@
 body {
   font-size: 14px;
   overflow-x: hidden;
+  text-shadow: 0 0 1px rgba(0,0,0,0.3);
 }
 body, h1, h2, h3, h4, h5, h6 {
   font-family: helvetica, arial, sans-serif;
@@ -192,7 +193,6 @@ footer {
   }
 }
 
-
 .navbar-brand{
   float: left;
   padding: 0;
@@ -308,8 +308,22 @@ footer {
     font-weight:400;
 }
 
+@font-face {
+    font-family: 'AUTOMANI';
+    src: url(../fonts/AUTOMANI.TTF);
+}
+
+@font-face {
+    font-family: 'NeonGlow';
+    src: url(../fonts/NeonGlow.ttf);
+}
+
+@font-face {
+    font-family: 'SinkinSans-100Thin';
+    src: url(../fonts/SinkinSans-100Thin.otf);
+}
+
 .carousel-caption {
-  font-family: BEBAS, Helvetica, Arial, sans-serif;
   padding: 0px;
   top: 0%;
   right: -8%;
@@ -351,6 +365,7 @@ footer {
   text-align: left;
   -webkit-font-smoothing: antialiased;
   text-shadow: 5px 5px 5px rgba(0,0,0,0.004);
+  font-family: BEBAS, Helvetica, Arial, sans-serif;
 }
 
 .retro_banner_subtext {
@@ -366,4 +381,21 @@ footer {
 
 .btndiv {
   margin-top: 9%;
+}
+
+.ny_banner_text {
+  position: absolute;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0px 0px 1.5px rgba(255, 218, 124, 1);
+  font-family: NeonGlow, Helvetica, Arial, sans-serif;
+  color: #FFDA7C;
+  margin-top: 1%;
+  margin-left: 20%;
+}
+
+.ny_banner_subtext {
+  font-family: SinkinSans-100Thin, Helvetica, Arial, sans-serif;
+  color: white;
+  text-shadow: 0 0 1.7px rgba(255,255,255,0.5);
 }
