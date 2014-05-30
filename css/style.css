@@ -156,20 +156,32 @@ footer {
 
 /*-===Custom for GTT===*/
 @media(max-width:767px){
-  .cellmanText {
-    padding-top: 0%;
-  }
+
 }
 @media(min-width:768px){
-  .cellmanText {
-    padding-top: 5%;
-  }
+
 }
 @media(min-width:992px){
 
 }
 @media(min-width:1200px){
 
+}
+@media(max-width:399px){
+  .cellmanText {
+    padding-top: 0%;
+  }
+  .cellman {
+    padding-top: 20%;
+  }
+}
+@media(min-width:400px){
+  .cellmanText {
+    padding-top: 5%;
+  }
+  .cellman {
+    padding-top: 0%;
+  }
 }
 
 
@@ -181,28 +193,28 @@ footer {
 }
 
 .dropdown-menu > li.column-menu ul {
-    display: inline-block;
-    list-style: none outside none;
-    margin: 10px;
-    width: 100%;
+  display: inline-block;
+  list-style: none outside none;
+  margin: 10px;
+  width: 100%;
 }
 .dropdown-menu > li.column-menu li {
-    display: inline;
-    float: left;
-    width: 100%;
+  display: inline;
+  float: left;
+  width: 100%;
 }
 .dropdown-menu > li.column-menu:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
  
 .dropdown-menu >li.column-menu li:not(:first-child){
-margin-left:10px;
+  margin-left:10px;
 }
  
 .dropdown-menu > li.column-menu li:first-child {
-    font-weight:bold;
-    font-size:1.5em;
-    color:#340f5a;
+  font-weight:bold;
+  font-size:1.5em;
+  color:#340f5a;
 }
 
  .ddlDividerR{
@@ -317,9 +329,6 @@ margin-left:10px;
 .cellmanBtn {
   position: relative;
   top: 50%;
-  width: 17vmin;
-  height: 5vmin;
-  font-size: 2.5vmin;
   padding-top: 1%;
 }
 
@@ -341,16 +350,13 @@ margin-left:10px;
 }
 
 .retro_banner_subtext {
-  font-size: 2.5vmin;
+
 }
 
 .retro_banner_button {
   margin-left: 70%;
   margin-top: -14%;
   color: navajowhite;
-  width: 15vmin;
-  height: 5vmin;
-  font-size: 2vmin;
   padding-top: 1%;
 }
 
