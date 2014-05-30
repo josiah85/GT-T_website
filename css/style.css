@@ -309,13 +309,13 @@ footer {
 }
 
 @font-face {
-    font-family: 'AUTOMANI';
-    src: url(../fonts/AUTOMANI.TTF);
+    font-family: 'NeonGlow';
+    src: url(../fonts/NeonGlow.ttf);
 }
 
 @font-face {
-    font-family: 'NeonGlow';
-    src: url(../fonts/NeonGlow.ttf);
+    font-family: 'NeonGlow-ie';
+    src: url(../fonts/NeonGlow.eot);
 }
 
 @font-face {
@@ -388,7 +388,7 @@ footer {
   text-align: left;
   -webkit-font-smoothing: antialiased;
   text-shadow: 0px 0px 1.5px rgba(255, 218, 124, 1);
-  font-family: NeonGlow, Helvetica, Arial, sans-serif;
+  font-family: NeonGlow, NeonGlow-ie, Helvetica, Arial, sans-serif;
   color: #FFDA7C;
   margin-top: 1%;
   margin-left: 20%;
