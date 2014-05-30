@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
     <!--IE rounded corners-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" >
+
+    <style type="text/css">
+      #maxmin { max-width: 2000px; min-width: 372px; margin: 0 auto; border: none; padding: 0; }
+    </style>
+
+    <!--[if lt ie 7]> <style type="text/css"> #maxmin { width: 730px; } </style> <![endif]-->
+
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
@@ -16,8 +24,9 @@
     <!--[if lt IE 8]>
       <link rel="stylesheet" type="text/css" media="screen" href="css/style-ie7.css"  />
     <![endif]-->
+    <link href="css/font-size.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="maxmin">
 
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -197,9 +206,10 @@
         <div class="item">
           <img src="img/retro_banner_blue_TEMPLATE.png" alt="...">
           <div class="carousel-caption">
-            <div class="retro_banner_text"><b>BlackBerry® Torch</b>
+            <div class="retro_banner_text font-size-1"><b>BlackBerry® Torch</b>
               <br/>9860
-              <br/><div class="retro_banner_subtext">The largest BlackBerry® smartphone screen to-date at 3.7"!</div>
+              <br/><div class="retro_banner_subtext font-size-2">The largest BlackBerry® smartphone
+              <br/>screen to-date at 3.7"!</div>
               <a class="btn btn-primary retro_banner_button" href="http://www.gtt.co.gy/?page=mobile"><div class="button_text">Details <span class="glyphicon glyphicon-circle-arrow-right"></span></div></a>
             </div>
             <img src="img/9860-rightangle.png" class="img-responsive retro_banner_cell" alt="Responsive image">
@@ -297,7 +307,7 @@
           <div class="col-md-12">
 
             <div class="well well-lg"><img src="img/cellman.jpg" class="img-responsive cellman" alt="Responsive image">
-              <div class="cellmanText"><strong>We give you choices because we recognize that one size never fits all.</strong><br/>You know your lifestyle and understand your calling patterns. So, choose the right plan for you and save!
+              <div class="cellmanText font-size-6"><strong>We give you choices because we recognize that one size never fits all.</strong><br/>You know your lifestyle and understand your calling patterns. So, choose the right plan for you and save!
               <div class="btndiv"><p><a class="btn btn-primary btn-lg cellmanBtn" href="http://www.gtt.co.gy/?page=mobile">Plans <span class="glyphicon glyphicon-circle-arrow-right"></span></a></p></div></div>
             </div>
 
@@ -396,36 +406,6 @@
       </div> <!-- /.container -->
     </footer>
 
-    <!--Cross browser text resizing-->
-    <script type="text/javascript">
-      if (!Array.prototype.filter)
-      {
-        Array.prototype.filter = function(fun /*, thisp*/)
-        {
-          var len = this.length;
-          if (typeof fun != "function")
-            throw new TypeError();
-
-          var res = new Array();
-          var thisp = arguments[1];
-          for (var i = 0; i < len; i++)
-          {
-            if (i in this)
-            {
-              var val = this[i]; // in case fun mutates this
-              if (fun.call(thisp, val, i, this))
-                res.push(val);
-            }
-          }
-
-          return res;
-        };
-      }
-    </script>
-    <!--<script src="js/vminpoly_parser_tokenizer.min.js"></script>-->
-    <script src="js/tokenizer.js"></script>
-    <script src="js/parser.js"></script>
-    <script src="js/vminpoly.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -442,5 +422,6 @@
         link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
       });
     </script>
+    <script type="text/javascript" src="js/respond.min.js"></script>
   </body>
 </html>
