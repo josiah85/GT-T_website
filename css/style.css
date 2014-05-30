@@ -1,6 +1,6 @@
 body {
   font-size: 14px;
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 body, h1, h2, h3, h4, h5, h6 {
   font-family: helvetica, arial, sans-serif;
@@ -312,7 +312,6 @@ margin-left:10px;
   top: 0px;
   margin-left: 40%;
   margin-right: 30px;
-  font-size: 3vmin;
 }
 
 .cellmanBtn {
@@ -333,10 +332,8 @@ margin-left:10px;
 .retro_banner_text {
   position: absolute;
   margin-top: 4%;
-  font-size: 6vmin;
+
   text-align: left;
-  width: 60vmin;
-  height: 20vmin;
   margin-left: 10%;
 
   -webkit-font-smoothing: antialiased;
