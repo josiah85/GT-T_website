@@ -53,9 +53,9 @@
                                  <li>
                                     <h4>Land Line</h4>
                                  </li>
-                                 <li><a href="#" onclick="service_rates();">Services & Rates</a></li>
-                                 <li><a href="#" onclick="phoneCards();">Phone Cards</a></li>
-                                 <li><a href="#" onclick="landLineFAQ();">Land Line FAQ</a></li>
+                                 <li><a href="#Services_Rates" onclick="service_rates();">Services & Rates</a></li>
+                                 <li><a href="#PhoneCards" onclick="phoneCards();">Phone Cards</a></li>
+                                 <li><a href="#landLineFAQ" onclick="landLineFAQ();">Land Line FAQ</a></li>
                                  <li><a href="#" onclick="residentialApplication();">Residential Application</a></li>
                                  <li><a href="#">Business Application</a></li>
                                  <li><a href="#">Terms & Conditions</a></li>
@@ -183,12 +183,55 @@
     </script>
 
     <div id="carouselid">
-      
+
     </div>
 
     <div class="container">
       <div class="row">
         <div id="contentid">
+          <div id="carousel-example-generic" class="headCarousel carousel slide carousel-fade" data-ride="carousel">
+   <!-- Indicators -->      
+   <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+   </ol>
+   <!-- Wrapper for slides -->      
+   <div class="carousel-inner">
+      <div class="item active">
+         <img src="img/ny_banner_fat_TEMPLATE_lowres.jpg" alt="...">          
+         <div class="carousel-caption" style="left: 0px;">
+            <div class="ny_banner_text font-size-1" style="left: 0px;">
+               <b>NO SUBSCRIPTION FEE FOR ROAMING!</b>              <br/>
+               <div class="ny_banner_subtext font-size-4">Pay only $72 per minute              <br/>while roaming in Canada or USA.</div>
+            </div>
+         </div>
+      </div>
+      <div class="item">
+         <img src="img/retro_banner_blue_TEMPLATE.jpg" alt="...">          
+         <div class="carousel-caption" style="left: 0px;">
+            <div class="retro_banner_text font-size-2" style="left: 0px;">
+               <b>BlackBerry® Torch</b>              <br/>9860              <br/>
+               <div class="retro_banner_subtext font-size-6">The largest BlackBerry® smartphone              <br/>screen to-date at 3.7"!</div>
+               <a class="btn btn-primary retro_banner_button" href="http://www.gtt.co.gy/?page=mobile">
+                  <div class="button_text font-size-8">Details <span class="glyphicon glyphicon-circle-arrow-right"></span></div>
+               </a>
+            </div>
+            <img src="img/9860-rightangle.png" class="img-responsive retro_banner_cell" alt="Responsive image">          
+         </div>
+      </div>
+      <div class="item">
+         <img src="img/antique_banner_dark_TEMPLATE.png" alt="...">          
+         <div class="carousel-caption" style="left: 0px;">            ...          </div>
+      </div>
+      <div class="item">
+         <img src="img/blue_banner_TEMPLATE.png" alt="...">          
+         <div class="carousel-caption" style="left: 0px;">            ...          </div>
+      </div>
+   </div>
+   <!-- Controls -->      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">        <span class="glyphicon glyphicon-chevron-left"></span>      </a>      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">        <span class="glyphicon glyphicon-chevron-right"></span>      </a>    
+</div>
 
         </div>
       </div> <!-- /.row -->
@@ -257,6 +300,5 @@
       });
     </script>
     <script type="text/javascript" src="js/respond.min.js"></script>
-    <script type="text/javascript" src="content/content_services_rates.js"></script>
   </body>
 </html>
