@@ -53,10 +53,10 @@
                                  <li>
                                     <h4>Land Line</h4>
                                  </li>
-                                 <li><a href="#Services_Rates" onclick="service_rates();">Services & Rates</a></li>
-                                 <li><a href="#PhoneCards" onclick="phoneCards();">Phone Cards</a></li>
+                                 <li><a href="#content_services_rates" onclick="service_rates();">Services & Rates</a></li>
+                                 <li><a href="#phoneCards" onclick="phoneCards();">Phone Cards</a></li>
                                  <li><a href="#landLineFAQ" onclick="landLineFAQ();">Land Line FAQ</a></li>
-                                 <li><a href="#" onclick="residentialApplication();">Residential Application</a></li>
+                                 <li><a href="#residentialApplication" onclick="residentialApplication();">Residential Application</a></li>
                                  <li><a href="#">Business Application</a></li>
                                  <li><a href="#">Terms & Conditions</a></li>
                                  <li><a href="#">General Regulations</a></li>
@@ -136,10 +136,33 @@
       <!-- /.navbar -->
 
     </div>
+    <script>
+    //added back button functionality for jquery load hashes
+    $(window).bind('hashchange', function() {
+       if(window.location.hash) {
+            var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+            $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
+            $('#carouselid').load('content/empty.html');
+
+            $('#contentid').load('content/' + hash + '.html');
+
+            $('#wellid').load('content/empty.html');
+            $('#bottomid').load('content/empty.html');
+            //alert (hash);
+            // hash found
+        } else {
+            // No hash found
+            $("#carouselid").load("content/carousel_home.html");
+            $("#contentid").load("content/content_home.html");
+            $("#wellid").load("content/well_home.html");
+            $("#bottomid").load("content/about_home.html");
+        }
+    });
+    </script>
     <script type="text/javascript">
       $(function()
       {
-        $("#carouselid").load("content/carousel_home.html");
+        //$("#carouselid").load("content/carousel_home.html");
         $("#contentid").load("content/content_home.html");
         $("#wellid").load("content/well_home.html");
         $("#bottomid").load("content/about_home.html");
@@ -184,12 +207,7 @@
 
     <div id="carouselid">
 
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div id="contentid">
-          <div id="carousel-example-generic" class="headCarousel carousel slide carousel-fade" data-ride="carousel">
+<div id="carousel-example-generic" class="headCarousel carousel slide carousel-fade" data-ride="carousel">
    <!-- Indicators -->      
    <ol class="carousel-indicators">
       <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -232,6 +250,12 @@
    </div>
    <!-- Controls -->      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">        <span class="glyphicon glyphicon-chevron-left"></span>      </a>      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">        <span class="glyphicon glyphicon-chevron-right"></span>      </a>    
 </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div id="contentid">
 
         </div>
       </div> <!-- /.row -->
