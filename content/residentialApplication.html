@@ -1,0 +1,243 @@
+<h2>Application for Residential Land Line Service</h2>
+<form action="?page=landlines&node=application&process=yes" method="post" enctype="application/x-www-form-urlencoded" name="formID" id="formID">
+
+<table align="center" class="tableDotTop" width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>First Name:</td>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><label for="fname"> </label><input type="text" name="fname" id="fname" class="validate[required,custom[onlyLetterSp]] text-input" /></td>
+    <td valign="top" bgcolor="#FFF7E6">Place of Employment:</td>
+    <td valign="top" bgcolor="#FFF7E6"><label for="placeofemp"></label><input type="text" name="placeofemp" id="placeofemp" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>Last Name:</td>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><label for="lname">
+      <input type="text" name="lname" id="lname" class="validate[required,custom[onlyLetterSp]] text-input" />
+    </label></td>
+    <td width="26%" valign="top" bgcolor="#FFF7E6">Position:</td>
+    <td width="23%" valign="top" bgcolor="#FFF7E6"><input type="text" name="position" id="position" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2">Middle Name:</td>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><label for="middlename"></label>
+      <input type="text" name="middlename" id="middlename" />      </td>
+    <td valign="top" bgcolor="#FFF7E6">Telephone:</td>
+    <td valign="top" bgcolor="#FFF7E6">      <label for="workplacenum">
+      <input type="text" name="workplacenum" id="workplacenum" class="validate[custom[phone]] text-input" />
+    </label></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2">Other Name:</td>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><label for="othername"></label>
+      <input type="text" name="othername" id="othername" />      <label for="billingaddress"></label></td>
+    <td valign="top" bgcolor="#FEF0FF">Name of Spouse:</td>
+    <td valign="top" bgcolor="#FEF0FF"><label for="spousename"></label>
+      <input type="text" name="spousename" id="spousename" />      <label for="position"></label></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2">Service Address</td>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><label for="serviceaddress"></label>
+      <input type="text" name="serviceaddress" id="serviceaddress" /></td>
+    <td valign="top" bgcolor="#FEF0FF">Place of Employment:</td>
+    <td valign="top" bgcolor="#FEF0FF"><label for="placeofempsp"></label>
+      <input type="text" name="placeofempsp" id="placeofempsp" />      <label for="placeofempsp"></label></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>Billing Address:</td>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><input type="text" name="billingaddress" id="billingaddress" class="validate[required]" /></td>
+    <td valign="top" bgcolor="#FEF0FF">Position:</td>
+    <td valign="top" bgcolor="#FEF0FF"><label for="positionsp"></label>
+      <input type="text" name="positionsp" id="positionsp" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>ID Type:</td>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><select name="idtype" id="idtype" class="validate[required]">
+      <option value="">Select One</option>
+      <option value="National Identification">National Identification</option>
+      <option value="Passport">Passport</option>
+      <option value="TIN">TIN</option>
+    </select></td>
+    <td valign="top" bgcolor="#FEF0FF">Telephone:</td>
+    <td valign="top" bgcolor="#FEF0FF"><label for="workplacenumsp"></label>
+      <input type="text" name="workplacenumsp" id="workplacenumsp" class="validate[custom[phone]] text-input" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>ID Number:</td>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><input type="text" name="idnumber" id="idnumber" class="validate[required]" /></td>
+    <td valign="top" bgcolor="#F0F3FF">Toll Limit</td>
+    <td valign="top" bgcolor="#F0F3FF"><select name="tolllimit">
+    	<option>$5,000</option>
+        <option>$10,000</option>
+        <option>$15,000</option>
+        <option>$20,000</option>
+        <option>$50,000</option>        
+    </select></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top" bgcolor="#F0F3FF">Is your lot:
+      <label>
+          <input type="radio" name="singledouble" checked="checked" value="single" id="singledouble_0" />
+          Single</label>
+        |
+        <label>
+          <input type="radio" name="singledouble" value="double" id="singledouble_1" />
+        double</label>
+        || <label>
+          <input type="radio" name="ownrent" value="own" checked="checked" id="ownrent_0" />
+            Own</label> 
+        |
+        <label>
+          <input type="radio" name="ownrent" value="rent" id="ownrent_1" />
+        Rent</label>
+       
+      || <label for="yearsthere">Number of years there: </label>
+      <input type="text" name="yearsthere" id="yearsthere" size="3" class="validate[required,custom[integer],min[0]] " />
+      <br />If you are living on a double lot, please select one: <select name="lotside" id="lotside">
+    																										<option value="">Select One</option>
+                                                                                                            <option value="Eastern Half">Eastern Half</option>
+                                                                                                            <option value="Western Half">Western Half</option>
+                                                                                                            <option value="Northern Half">Northern Half</option>
+                                                                                                            <option value="Southern Half">Southern Half</option>
+                                                                                                         </select></td>
+   
+  </tr>
+  
+  <tr>
+    <td colspan="6" valign="top" bgcolor="#F0F3FF">More than one house in your lot? <label>
+          <input type="radio" name="otherhouseinlot" value="Yes" id="otherhouseinlot_0" />
+          Yes</label>
+      <label>
+          | 
+          <input type="radio" name="otherhouseinlot" value="No" id="otherhouseinlot_1" />
+        No</label>
+      , if <strong>Yes</strong> please state: <select name="whichhouse"><option>-</option>
+      <option>First</option>
+      <option>Second</option>
+      <option>Third</option>
+      <option>Fourth</option></select></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top" bgcolor="#F0F3FF">Have you or any member of your household had telephone service before? <label>
+          <input type="radio" name="servicebefore" value="Yes" id="servicebefore_0" class="validate[required] radio"  />
+          Yes</label>
+        |
+        <label>
+          <input type="radio" name="servicebefore" value="No" id="servicebefore_1" class="validate[required] radio"  />
+        No</label>
+        <br />
+        If Yes, please state: 
+        <label for="location">Location: </label>
+      <input type="text" name="location" id="location" />
+      , 
+      <label for="oldtelephonenum">Tel#:</label>
+      <input type="text" name="oldtelephonenum" id="oldtelephonenum" class="validate[custom[phone]] text-input" /></td>
+  </tr>
+  <tr>
+    <td colspan="6" valign="top" bgcolor="#F0F3FF">Nearest telephone service. 
+      <label for="nearestname">Name: </label>
+      <input type="text" name="nearestname" id="nearestname" />
+      , 
+      <label for="nearesttel">Tel#:</label>
+      <input type="text" name="nearesttel" id="nearesttel" class="validate[custom[phone]] text-input" /> </td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF">Bank Reference: </td>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF"><input type="text" name="bankref" id="bankref" /></td>
+    <td valign="top" bgcolor="#F0F3FF">Credit Reference: </td>
+    <td valign="top" bgcolor="#F0F3FF"><input type="text" name="creditref" id="creditref" /></td>
+  </tr>
+  <tr>
+    <td colspan="4" align="center" valign="top" bgcolor="#F3F3F3"><strong><em>Type of Service Required</em></strong></td>
+    
+    <td colspan="2" align="center" valign="top" bgcolor="#F0F3FF"><strong><em>Previous Application</em></strong></td>
+    
+  </tr>
+  <tr>
+    <td width="20%" valign="top" bgcolor="#F3F3F3">Touch Tone:</td>
+    <td width="4%" align="center" valign="top" bgcolor="#F3F3F3"><input type="checkbox" name="touchtone" id="touchtone" value="Yes" />
+      <label for="touchtone"></label></td>
+    <td width="22%" valign="top" bgcolor="#F3F3F3">Rotary Dial:</td>
+    <td width="5%" align="center" valign="top" bgcolor="#F3F3F3"><input type="checkbox" name="rotarydial" id="rotarydial" value="Yes" />
+      <label for="rotarydial"></label></td>
+    <td valign="top" bgcolor="#F0F3FF">Name:</td>
+    <td valign="top" bgcolor="#F0F3FF"><label for="previousname"></label>
+      <input type="text" name="previousname" id="previousname" /></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F3F3F3">Call Waiting:</td>
+    <td align="center" valign="top" bgcolor="#F3F3F3"><input type="checkbox" name="callwaiting" id="callwaiting" value="Yes" />
+      <label for="callwaiting"></label></td>
+    <td valign="top" bgcolor="#F3F3F3">Non Published:</td>
+    <td align="center" valign="top" bgcolor="#F3F3F3"><input type="checkbox" name="nonpublished" id="nonpublished" value="Yes"/>
+      <label for="nonpublished"></label></td>
+    <td valign="top" bgcolor="#F0F3FF">Address:</td>
+    <td valign="top" bgcolor="#F0F3FF"><label for="previousaddress"></label>
+      <input type="text" name="previousaddress" id="previousaddress" /></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F3F3F3">3 Way Call:</td>
+    <td align="center" valign="top" bgcolor="#F3F3F3"><input type="checkbox" name="way3call" id="way3call" value="Yes" />
+      <label for="way3call"></label></td>
+    <td valign="top" bgcolor="#F3F3F3">Additional Listing:</td>
+    <td align="center" valign="top" bgcolor="#F3F3F3"><input type="checkbox" name="additionallisting" id="additionallisting" value="Yes" />
+      <label for="additionallisting"></label></td>
+    <td valign="top" bgcolor="#F0F3FF">Date:</td>
+    <td valign="top" bgcolor="#F0F3FF"><label for="previousdate"></label>
+      <input type="text" name="previousdate" id="datepicker" /></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F3F3F3">Call Forwarding:</td>
+    <td align="center" valign="top" bgcolor="#F3F3F3"><input type="checkbox" name="callforwarding" id="callforwarding" value="Yes"/>
+      <label for="callforwarding"></label></td>
+    <td valign="top" bgcolor="#F3F3F3">Speed Dialing:</td>
+    <td align="center" valign="top" bgcolor="#F3F3F3"><input type="checkbox" name="speeddialing" id="speeddialing" value="Yes" />
+      <label for="speeddialing"></label></td>
+    <td valign="top" bgcolor="#F0F3FF">Premises had previous service?</td>
+    <td valign="top" bgcolor="#F0F3FF">
+      <label>
+        <input type="radio" name="previousservice" value="Yes" id="previousservice_0" class="validate[required] radio"/>
+        Yes</label>
+      |
+      <label>
+        <input type="radio" name="previousservice" value="No" id="previousservice_1" class="validate[required] radio"/>
+        No</label>
+</td>
+  </tr>
+ 
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF">Other Service/Additional Equipment:<br />
+    </td>
+    <td valign="top" bgcolor="#F0F3FF" colspan="2"><label for="otherservice"></label>
+      <input type="text" name="otherservice" id="otherservice" /></td>
+    <td valign="top" bgcolor="#F0F3FF" colspan="2"><strong><em>Terms &amp; Conditions:</em></strong><br />
+Please click <a href="?page=terms" target="_blank">here</a> to read terms and conditions. </td>
+    
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>Contact Telephone:</td>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF"><label for="contactTel"></label>
+      <input type="text" name="contactTel" id="contactTel" class="validate[required,custom[phone]] text-input"></td>
+    <td colspan="2" align="center"valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>I agree to the terms and conditions:
+      <input type="checkbox" name="agree" id="agree" class="validate[required]" >
+      <label for="agree"></label></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>Contact E-mail:</td>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF"><label for="contactEmail"></label>
+      <input type="text" name="contactEmail" id="contactEmail" class="validate[required,custom[email]] text-input"></td>
+    <td colspan="2" align="center"valign="top" bgcolor="#F0F3FF"><input name="token" type="hidden" value="afkupxbmlynu" /><input type="submit" name="submit" id="submit" value="Apply"> | <span class="redText">*[required fields]</span></td>
+  </tr>
+</table>
+</form>
+<div><img src="images/pdfIcon.gif" width="24" height="20"> Download: <a href="data/forms/landlines_residential.pdf" target="_blank">Residential Application</a> | <a href="data/forms/landlines_business.pdf" target="_blank">Business Application</a> | <a href="data/forms/landlines_terms.pdf" target="_blank">Terms and Conditions</a></div>
+        <br /><br />
+        </p></td>
+  </tr>
+</table>
+        </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>

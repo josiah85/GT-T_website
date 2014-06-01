@@ -16,6 +16,7 @@
     <link href="css/font-face.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" >
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 
     <style type="text/css">
       #maxmin { max-width: 2000px; min-width: 320px; margin: 0 auto; border: none; padding: 0; }
@@ -33,17 +34,169 @@
   </head>
   <body id="maxmin">
     <noscript>Your browser does not support JavaScript!</noscript>
-    <script type="text/javascript" src="content/navbar.js"></script>
+    <div id="navbarid">
+      <!--<script type="text/javascript" src="content/navbar.js"></script>-->
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+         <div class="container">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">            <span class="icon-bar"></span>            <span class="icon-bar"></span>            <span class="icon-bar"></span>          </button>          <!--<a class="navbar-brand nav-link" href="#top">Acme Corp</a>-->          <a class="navbar-brand" href="index.html"> <img src="img/GTT_logo3.png" width="100px"></a>                    
+            </div>
+            <!-- /.navbar-header -->                    
+            <div class="collapse navbar-collapse navbar-ex1-collapse" style="overflow-x: hidden; height: 0px;">
+               <ul class="nav navbar-nav">
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products & Services <b class="caret"></b></a>                                            
+                     <ul class="dropdown-menu ddlMulti">
+                        <li>
+                           <div class="row ddlRow">
+                              <ul class="list-unstyled col-md-4 col-sm-4">
+                                 <li>
+                                    <h4>Land Line</h4>
+                                 </li>
+                                 <li><a href="#" onclick="service_rates();">Services & Rates</a></li>
+                                 <li><a href="#" onclick="phoneCards();">Phone Cards</a></li>
+                                 <li><a href="#" onclick="landLineFAQ();">Land Line FAQ</a></li>
+                                 <li><a href="#" onclick="residentialApplication();">Residential Application</a></li>
+                                 <li><a href="#">Business Application</a></li>
+                                 <li><a href="#">Terms & Conditions</a></li>
+                                 <li><a href="#">General Regulations</a></li>
+                              </ul>
+                              <ul class="list-unstyled col-md-4 col-sm-4 ddlDividerR ddlDividerL">
+                                 <li>
+                                    <h4>Mobile</h4>
+                                 </li>
+                                 <li><a href="#">Plans & Rates</a></li>
+                                 <li><a href="#">Phones & Accessories</a></li>
+                                 <li><a href="#">Mobile Top-up</a></li>
+                                 <li><a href="#">BlackBerry&reg;</a></li>
+                                 <li><a href="#">GTTi</a></li>
+                                 <li><a href="#">International Roaming</a></li>
+                                 <li><a href="#">Value Added Services</a></li>
+                                 <li><a href="#">Mobile FAQ</a></li>
+                                 <li><a href="#">Application Form</a></li>
+                                 <li><a href="#">General Regulations</a></li>
+                                 <li><a href="#">Mobile Money Guyana</a></li>
+                              </ul>
+                              <ul class="list-unstyled col-sm-4 col-md-4">
+                                 <li>
+                                    <h4>Internet</h4>
+                                 </li>
+                                 <li><a href="#">DSL Services & Rates</a></li>
+                                 <li><a href="#">DSL FAQ</a></li>
+                                 <li><a href="#">DSL Application Form</a></li>
+                                 <li><a href="#">DSL Terms & Conditions</a></li>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Directory <b class="caret"></b></a>                                            
+                     <ul class="dropdown-menu menuWide">
+                        <li>
+                           <div class="row ddlRow" style="width: 200px;">
+                              <ul class="list-unstyled col-md-12">
+                                 <li><a href="#">Directory Overview</a></li>
+                                 <li><a href="#">White Pages</a></li>
+                                 <li><a href="#">Yellow Pages</a></li>
+                                 <li><a href="#">International Codes</a></li>
+                                 <li><a href="#">Rates</a></li>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>                                            
+                     <ul class="dropdown-menu menuWide">
+                        <li>
+                           <div class="row ddlRow" style="width: 250px;">
+                              <ul class="list-unstyled col-md-12">
+                                 <li><a href="#">Customer Support</a></li>
+                                 <li><a href="#">Fault Reporting</a></li>
+                                 <li><a href="#">General FAQ</a></li>
+                                 <li><a href="#">Avoid Service Disconnection</a></li>
+                                 <li><a href="#">Bill Payment Options</a></li>
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#features" class="nav-link">Explore</a></li>
+                  <li><a href="#about" class="nav-link">About Us</a></li>
+                  <li><a href="http://www.gtt.co.gy/?page=contact">Contact Us</a></li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->            
+         </div>
+         <!-- /.container -->    
+      </nav>
+      <!-- /.navbar -->
 
-    <script type="text/javascript" src="content/carousel.js"></script>
+    </div>
+    <script type="text/javascript">
+      $(function()
+      {
+        $("#carouselid").load("content/carousel_home.html");
+        $("#contentid").load("content/content_home.html");
+        $("#wellid").load("content/well_home.html");
+        $("#bottomid").load("content/about_home.html");
+      });
+      function service_rates(){
+        $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
+        $('#carouselid').load('content/empty.html');
+
+        $('#contentid').load('content/content_services_rates.html');
+
+        $('#wellid').load('content/empty.html');
+        $('#bottomid').load('content/empty.html');
+      }
+      function phoneCards(){
+        $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
+        $('#carouselid').load('content/empty.html');
+
+        $('#contentid').load('content/phoneCards.html');
+
+        $('#wellid').load('content/empty.html');
+        $('#bottomid').load('content/empty.html');
+      }
+      function landLineFAQ(){
+        $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
+        $('#carouselid').load('content/empty.html');
+
+        $('#contentid').load('content/landLineFAQ.html');
+
+        $('#wellid').load('content/empty.html');
+        $('#bottomid').load('content/empty.html');
+      }
+      function residentialApplication(){
+        $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
+        $('#carouselid').load('content/empty.html');
+
+        $('#contentid').load('content/residentialApplication.html');
+
+        $('#wellid').load('content/empty.html');
+        $('#bottomid').load('content/empty.html');
+      }
+    </script>
+
+    <div id="carouselid">
+      
+    </div>
 
     <div class="container">
       <div class="row">
-        <script type="text/javascript" src="content/content_home.js"></script>
+        <div id="contentid">
+
+        </div>
       </div> <!-- /.row -->
       <div class="row">
           <div class="col-md-12">
-            <script type="text/javascript" src="content/well_home.js"></script>
+            <div id="wellid">
+
+            </div>
           </div> <!-- /.col-md-12 -->
         </div> <!-- /.row -->
     </div> <!-- /.container -->
@@ -51,14 +204,19 @@
     <div class="container-alternate">
       <div class="container">
         <div class="row about">
-          <script type="text/javascript" src="content/about_home.js"></script>
+            <div class="col-md-10 col-md-offset-1 text-center">
+              <div id="bottomid" class="borderBottom">
+
+              </div>
+            </div>
+            <!-- /.col-md-10 -->
         </div> <!-- /.row -->
       </div> <!-- /.container -->
     </div> <!-- /.container-alternate -->
 
     <script type="text/javascript" src="content/footer.js"></script>
 
-    <script src="js/jquery.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function() {
@@ -99,5 +257,6 @@
       });
     </script>
     <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="content/content_services_rates.js"></script>
   </body>
 </html>
