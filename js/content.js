@@ -1,13 +1,15 @@
 //initial load of homepage
 $(function()
 {
-  //$("#carouselid").load("content/carousel_home.html");
-  $("#navbarid").load("content/navbar.html");
-  $("#contentid").load("content/content_home.html");
-  $("#wellid").load("content/well_home.html");
-  $("#bottomid").load("content/about_home.html");
-  //carousel turn interval
-  $('.carousel').carousel({interval: 8000});
+  if(!window.location.hash) {
+    //$("#carouselid").load("content/carousel_home.html");
+    $("#navbarid").load("content/navbar.html");
+    $("#contentid").load("content/content_home.html");
+    $("#wellid").load("content/well_home.html");
+    $("#bottomid").load("content/about_home.html");
+    //carousel turn interval
+    $('.carousel').carousel({interval: 8000});
+  }
 });
 //smooth transition for nav link anchor
 $(".nav-link").click(function(e) {
