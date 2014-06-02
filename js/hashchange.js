@@ -2,7 +2,7 @@
 $(function()
 {
     //window.location.hash="";
-    if(window.location.hash) {
+    if(window.location.hash && (window.location.hash != "#features" || window.location.hash != "#about") ) {
         var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
         $("#navbarid").load("content/navbar.html");
         $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
@@ -18,19 +18,23 @@ $(function()
 });
 //added back button functionality for jquery load hashes
 $(window).bind('hashchange', function() {
-   if(window.location.hash) {
-        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-        $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
-        $('#carouselid').load('content/empty.html');
+    if(window.location.hash != "#features" && window.location.hash != "#about"){
+       if(window.location.hash) {
+            var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+            $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
+            $('#carouselid').load('content/empty.html');
 
-        $('#contentid').load('content/' + hash + '.html');
+            $('#contentid').load('content/' + hash + '.html');
 
-        $('#wellid').load('content/empty.html');
-        $('#bottomid').load('content/empty.html');
-        //alert (hash);
-        // hash found
+            $('#wellid').load('content/empty.html');
+            $('#bottomid').load('content/empty.html');
+            //alert (hash);
+            // hash found
+        } else {
+            // No hash found
+            location.reload();
+        }
     } else {
-        // No hash found
-        location.reload();
+        $("#navbarid").load("content/navbar.html");
     }
 });
