@@ -1,3 +1,8 @@
+//remove has value on reload
+$(function()
+{
+    window.location.hash="";
+});
 //added back button functionality for jquery load hashes
 $(window).bind('hashchange', function() {
    if(window.location.hash) {

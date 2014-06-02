@@ -1,0 +1,427 @@
+@charset utf-8;
+/* CSS Document */
+
+/*input.readonly { color: blue;  background-color: rgb(245,240,245) }
+input.focus { background-color: rgb(230,230,245) }
+*/
+/*input.invalid { background-color: rgb(255,230,245); color: red }
+input.irrelevant { display: none; visibility: hidden }
+input.missing { background-color: rgb(255,230,245); color: red }*/
+
+/*label.invalid { color: red }
+label.missing { color: red }
+label.irrelevant { display: none; visibility: hidden }*/
+
+/*select, option { background-color: rgb(240,240,255) }
+select.focus { background-color: rgb(230,230,245) }*/
+
+/*input.combotext { padding: 0;
+ padding-left: 0.5em;
+ text-align: left;
+}*/
+
+/*fieldset { line-height: 120%; padding: 0.4em;
+ background-color: rgb(250,250,250) }
+legend { background-color: rgb(255,255,255);
+ font-size: 80%; font-style: italic;
+ padding: 3px; margin-left: 1em; }
+fieldset.irrelevant { display: none; visibility: hidden }
+fieldset.borderless { border: none; margin: 0; padding: 0 }
+*/
+/*table.fieldset { border: none; border-collapse: collapse;
+   padding: 0; margin: 0; }
+table.fieldset td { border: none; padding: 0;
+   margin: 0; text-align: center }*/
+
+/*pre {
+  padding-left: 0.5em;
+  border-top: solid thin black;
+  border-bottom: solid thin black;
+  color: green;
+}*/
+
+/*table.picker {
+  background-color: rgb(220,220,220);
+  border: thin solid black;
+  position: absolute;
+  font-size: 80%;
+}*/
+/*table.picker td { text-align: center }
+table.picker td.current { background-color: rgb(230,230,240) }
+table.picker span.static { color: black; cursor: default }
+table.picker span.link { color: blue }
+table.picker span { color: black; cursor: pointer }
+table.picker td.current span { color: blue }
+*/
+/*table.picker caption {
+  background-color: rgb(230,230,230);
+  border: thin solid black;
+  border-bottom: none;
+  padding: 0;
+}*/
+
+/*table.picker img {
+ border: none;
+ margin: 0;
+ margin-top: 0.1em;
+ margin-right: 0.1em;
+ padding: 0;
+ width: 16px;
+ height: 16px;
+ color: maroon;
+}*/
+/*button.picker {
+  padding: 0;
+  vertical-align: bottom;
+}*/
+
+/*form button { 
+vertical-align: bottom;
+text-align:center; }*/
+
+/*textarea:focus, input:focus {
+	border: 2px solid #900;
+} */
+
+/*body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #949494;
+	color: #6C6C6C;
+}*/
+/*.dsl_page {
+	background-image: url(../images/dsl_rates.jpg);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}*/
+
+/*body {
+	margin: 0px;
+	padding: 0px;
+	z-index:-23;
+	background-image: url(../images/header2.jpg);
+	background-repeat: no-repeat;
+	background-color: #296FDF;
+	background-attachment: fixed;
+}*/
+
+
+
+/*#bodyTable {
+	margin-top:20px;
+	margin-bottom:15px;
+	border-top-width: thick;
+	border-bottom-width: thick;
+	border-top-style: none;
+	border-bottom-style: solid;
+	border-top-color: #FFF;
+	border-bottom-color: #FFF;
+}*/
+/*items for DSL Account Number */
+/*.acnumber {
+		font-size: 16px;
+		font-weight:bolder;
+		color: grey;
+}*/
+
+/*.acnumber_result {
+		font-size: 24px;
+		font-weight:bolder;
+		color: grey;
+}*/
+
+/* END */
+/*a:link {
+	color: #0099FF;
+	
+	text-decoration: none;
+}*/
+/*a:visited {
+	text-decoration: none;
+	color: #3399FF;
+}*/
+/*a:hover {
+	text-decoration: underline;
+	color: #FF0000;
+}*/
+/*a:active {
+	text-decoration: none;
+	color: #6699FF;
+}*/
+/*h1 {
+	font-size: 18px;
+	color: #666666;
+}*/
+/*h2 {
+	font-size: 14px;
+	color: #999;
+	background-image:url(h2_bkgrnd_noicon.png);
+	background-repeat:no-repeat;
+	padding: 5px 5px 5px 1px;
+}*/
+/*ul {
+	list-style-image: url(bullet.gif);
+}*/
+/*.bannerText {
+	font-size: 16px;
+	color: #FFFFFF;
+}*/
+/*.loginTable {
+	border-left-width: 1px;
+	border-left-style: dotted;
+	border-left-color: #666666;
+}
+*/
+/*.tableDotTop {
+	border-top-width: thin;
+	border-top-style: dotted;
+	border-top-color: #F3F3F3;
+}*/
+
+/*.bannerTextBold {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight:bold;
+}*/
+
+/*.bannerText14 {
+	font-size: 14px;
+	color: #FFFFFF;
+}*/
+/*.headerText {
+	font-size: 10px;
+	color: #FFFFFF;
+}*/
+/*.headerTextBold {
+	font-size: 10px;
+	color: #333333;
+	font-weight:bold;
+}*/
+/*.headerTextBoldWhite {
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight:bold;
+}*/
+
+/*#footer {
+	margin:0 auto;
+	width: 910px;
+	padding-bottom: 20px;
+	text-align:center;
+	font-size: 11px;
+	color: #FFFFFF;
+}*/
+
+/*#footer a {
+	color: #FFF;	
+}*/
+/*.selectSizeit{
+    width: 700px;
+}*/
+
+/*.headerTextBoldGreen {
+	font-size: 10px;
+	color:#006600;
+	font-weight:bold;
+}*/
+/*.boldGreenText {
+	font-size: 12px;
+	color:#006600;
+	font-weight:bold;
+}*/
+/*.boldRedText {
+	font-size: 12px;
+	color:#CC0000;
+	font-weight:bold;
+}*/
+
+/*.keyFunctionsBullet {
+	list-style-image: url(bullet_key.png);
+}*/
+
+/*h3 {
+	font-size: 14px;
+	color: #89AEED;
+	padding: 1px;
+	vertical-align: 1%;
+	text-indent: 0px;
+}*/
+/*h4 {
+	font-size: 12px;
+	color: #84ABEC;
+}*/
+/*h5 {
+	font-size: 10px;
+	color: #333333;
+}*/
+/*.boldDeepGrey10 {
+	font-size: 11px;
+	color: #333333;
+	font-weight:bold;
+}*/
+/*.redText {
+	font-size: 10px;
+	color: #FF0000;
+}*/
+/*.infoTd {
+	font-size: 11px;
+	color: #333333;
+}*/
+
+
+/*th {
+	background-color: #F3F3F3;
+}*/
+/*.PopBoxImageSmall
+{
+   border: none 0px white;
+   cursor: url("images/magplus.cur"), pointer;
+}*/
+/*.PopBoxImageLarge
+{
+   border: solid thin #CCCCFF;
+   cursor: url("images/magminus.cur"), pointer;
+} */
+/*.newsScrool {
+	background-color: #FBFBFB;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding-top: 2px;
+	padding-bottom:2px;
+}*/
+/*.tableDotRight {
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color:#F4F4F4;
+}*/
+
+/*.contactPage {
+	background-image: url(../images/contact_page.jpg);
+	background-repeat: no-repeat;
+	background-position: right top;
+	text-shadow:#999;
+	background-color:#FFFFFF;
+}*/
+/*.listing th{
+	font-style:normal;
+}*/
+/*.listing td{
+    border-bottom: 1px solid #CCCCCC;
+    color: #666699;
+    padding: 6px 8px;
+}*/
+/*.listing tr:hover {
+	background-color: #ECF9FF;
+}*/
+
+/*.ylisting th{ 
+	font-style:normal;
+}*/
+/*.ylisting td{
+	border-bottom: 1px solid #CCCCCC;
+	color: #666699;
+	padding: 6px 4px;
+}*/
+/*.ylisting tr:hover {
+	background-color: #FF0;
+	cursor:default;
+}*/
+/*.yellowpages fieldset {
+	background-color:#FF0;
+	font-weight:bold;
+	color:#666;
+	padding: 0px;
+}*/
+
+/*.yellowOR {
+	font-weight:bold;
+	font-size:18px;
+	padding: 0px 15px;
+	color:#F00;
+}*/
+
+/*.sideBar h2 {
+	font-size: 14px;
+	color: #999;
+	background-image:url(h2_bkgrnd_sidebar_noicon.png);
+	background-repeat:no-repeat;
+	padding: 5px 5px 5px 1px;
+}*/
+
+.name_box {
+    background-color: #1577E6;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    text-decoration: none;
+}
+/*.mainBody {
+	padding-left:10px;
+	padding-right: 10px;
+	background-color:#FFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding-bottom:3px;	
+}*/
+/*.menu_sub {
+	
+	list-style-position:outside;
+	margin-left:-32px;
+	
+}*/
+/*ul {
+	font-size:11px;	
+}*/
+/*#blackberryTube {
+	margin: 0 auto;
+	width: 100%;
+}*/
+
+/*#blackberryTubeLeft {
+	width:400px;
+	height:400px;
+	float:left;
+	background-color:#999;
+}*/
+/*#blackberryTubeRight {
+	width:100px;
+	background-color:#F33;
+	float:right;
+	height:400px;	
+}*/
+/*.info {
+	font-size: 10px;
+}*/
+
+/*#wrapImage {
+ width:880px;
+ margin:0px auto;
+ text-align:left;
+ padding:8px;
+ -moz-box-shadow: 1px 1px 5px #888;
+ -webkit-box-shadow: 1px 1px 5px #888;
+ box-shadow: 1px 1px 5px #888;
+ }*/
+/*#wrapImage img{
+	float:left;
+	clear:left;
+	margin-right:10px;
+		
+}*/
+
+/*#introlink {
+	width: 910px;
+	height: 0px;
+	margin: 0 auto;
+	text-align:right;
+	padding-right: 80px;	
+}*/
+
+
+/*#introlink a:hover {
+	color:#F00;
+}*/
