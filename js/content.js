@@ -15,19 +15,8 @@ function content_preload() {
   $('#wellid').load('content/empty.html');
   $('#bottomid').load('content/empty.html');
 }
-function service_rates(){
+//load appropriate content when called
+function loadContent(page){
   content_preload();
-  $('#contentid').load('content/content_services_rates.html');
-}
-function phoneCards(){
-  content_preload();
-  $('#contentid').load('content/phoneCards.html');
-}
-function landLineFAQ(){
-  content_preload();
-  $('#contentid').load('content/landLineFAQ.html');
-}
-function residentialApplication(){
-  content_preload();
-  $('#contentid').load('content/residentialApplication.html');
+  $('#contentid').load('content/' + page + '.html');
 }
