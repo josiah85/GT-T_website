@@ -18,10 +18,10 @@ $(".nav-link").click(function(e) {
   link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
 });
 function content_preload() {
+  $('#carouselid').load('content/empty.html');
   $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
   //collapse navbar
   $("#navbarid").load('content/navbar.html');
-  $('#carouselid').load('content/empty.html');
   $('#wellid').load('content/empty.html');
   $('#bottomid').load('content/empty.html');
 }
