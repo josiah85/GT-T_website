@@ -6,6 +6,16 @@ $(function()
   $("#contentid").load("content/content_home.html");
   $("#wellid").load("content/well_home.html");
   $("#bottomid").load("content/about_home.html");
+  //carousel turn interval
+  $('.carousel').carousel({interval: 8000});
+});
+//smooth transition for nav link anchor
+$(".nav-link").click(function(e) {
+  e.preventDefault();
+  var link = $(this);
+  var href = link.attr("href");
+  $("html,body").animate({scrollTop: $(href).offset().top - 80}, 500);
+  link.closest(".navbar").find(".navbar-toggle:not(.collapsed)").click();
 });
 function content_preload() {
   $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
