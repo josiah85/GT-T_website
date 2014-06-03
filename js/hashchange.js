@@ -4,7 +4,7 @@ $(function()
     //window.location.hash="";
     if(window.location.hash && (window.location.hash != "#nav_features" || window.location.hash != "#nav_about") ) {
         var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
-        $("#navbarid").load("content/navbar.html");
+        $("#navbarid").load("content/navbar_content.html");
         $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
         $('#carouselid').load('content/empty.html');
 
@@ -20,6 +20,7 @@ $(function()
 $(window).bind('hashchange', function() {
     if(window.location.hash != "#nav_features" && window.location.hash != "#nav_about"){
        if(window.location.hash) {
+            $("#navbarid").load("content/navbar_content.html");
             var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
             $('head').append('<link rel="stylesheet" href="css/content.css" type="text/css" />');
             $('#carouselid').load('content/empty.html');
