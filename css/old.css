@@ -1,37 +1,37 @@
 @charset utf-8;
 /* CSS Document */
 
-/*input.readonly { color: blue;  background-color: rgb(245,240,245) }
+input.readonly { color: blue;  background-color: rgb(245,240,245) }
 input.focus { background-color: rgb(230,230,245) }
-*/
-/*input.invalid { background-color: rgb(255,230,245); color: red }
+
+input.invalid { background-color: rgb(255,230,245); color: red }
 input.irrelevant { display: none; visibility: hidden }
-input.missing { background-color: rgb(255,230,245); color: red }*/
+input.missing { background-color: rgb(255,230,245); color: red }
 
-/*label.invalid { color: red }
+label.invalid { color: red }
 label.missing { color: red }
-label.irrelevant { display: none; visibility: hidden }*/
+label.irrelevant { display: none; visibility: hidden }
 
-/*select, option { background-color: rgb(240,240,255) }
-select.focus { background-color: rgb(230,230,245) }*/
+select, option { background-color: rgb(240,240,255) }
+select.focus { background-color: rgb(230,230,245) }
 
-/*input.combotext { padding: 0;
+input.combotext { padding: 0;
  padding-left: 0.5em;
  text-align: left;
-}*/
+}
 
-/*fieldset { line-height: 120%; padding: 0.4em;
+fieldset { line-height: 120%; padding: 0.4em;
  background-color: rgb(250,250,250) }
 legend { background-color: rgb(255,255,255);
  font-size: 80%; font-style: italic;
  padding: 3px; margin-left: 1em; }
 fieldset.irrelevant { display: none; visibility: hidden }
 fieldset.borderless { border: none; margin: 0; padding: 0 }
-*/
-/*table.fieldset { border: none; border-collapse: collapse;
+
+table.fieldset { border: none; border-collapse: collapse;
    padding: 0; margin: 0; }
 table.fieldset td { border: none; padding: 0;
-   margin: 0; text-align: center }*/
+   margin: 0; text-align: center }
 
 /*pre {
   padding-left: 0.5em;
@@ -40,27 +40,27 @@ table.fieldset td { border: none; padding: 0;
   color: green;
 }*/
 
-/*table.picker {
+table.picker {
   background-color: rgb(220,220,220);
   border: thin solid black;
   position: absolute;
   font-size: 80%;
-}*/
-/*table.picker td { text-align: center }
+}
+table.picker td { text-align: center }
 table.picker td.current { background-color: rgb(230,230,240) }
 table.picker span.static { color: black; cursor: default }
 table.picker span.link { color: blue }
 table.picker span { color: black; cursor: pointer }
 table.picker td.current span { color: blue }
-*/
-/*table.picker caption {
+
+table.picker caption {
   background-color: rgb(230,230,230);
   border: thin solid black;
   border-bottom: none;
   padding: 0;
-}*/
+}
 
-/*table.picker img {
+table.picker img {
  border: none;
  margin: 0;
  margin-top: 0.1em;
@@ -69,7 +69,7 @@ table.picker td.current span { color: blue }
  width: 16px;
  height: 16px;
  color: maroon;
-}*/
+}
 /*button.picker {
   padding: 0;
   vertical-align: bottom;
@@ -172,11 +172,11 @@ text-align:center; }*/
 	border-left-color: #666666;
 }
 */
-/*.tableDotTop {
+.tableDotTop {
 	border-top-width: thin;
 	border-top-style: dotted;
 	border-top-color: #F3F3F3;
-}*/
+}
 
 /*.bannerTextBold {
 	font-size: 16px;
@@ -259,10 +259,10 @@ text-align:center; }*/
 	color: #333333;
 	font-weight:bold;
 }*/
-/*.redText {
+.redText {
 	font-size: 10px;
 	color: #FF0000;
-}*/
+}
 /*.infoTd {
 	font-size: 11px;
 	color: #333333;
