@@ -282,14 +282,14 @@ text-align:center; }*/
    border: solid thin #CCCCFF;
    cursor: url("images/magminus.cur"), pointer;
 } */
-/*.newsScrool {
+.newsScrool {
 	background-color: #FBFBFB;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	padding-top: 2px;
 	padding-bottom:2px;
-}*/
+}
 /*.tableDotRight {
 	border-right-width: 1px;
 	border-right-style: dotted;
