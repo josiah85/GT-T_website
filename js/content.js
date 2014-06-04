@@ -6,7 +6,7 @@ $(function()
     $("#navbarid").load("content/navbar.html");
     $("#contentid").load("content/content_home.html");
     $("#wellid").load("content/well_home.html");
-    $("#bottomid").load("content/about_home.html");
+    $("#bottomid").load("content/sitemap.html");
     //carousel turn interval
     $('.carousel').carousel({interval: 8000});
   }
@@ -25,7 +25,7 @@ function content_preload() {
   //collapse navbar
   $("#navbarid").load('content/navbar.html');
   $('#wellid').load('content/empty.html');
-  $('#bottomid').load('content/empty.html');
+  $('#bottomid').load('content/sitemap.html');
 }
 //load appropriate content when called
 function loadContent(page){
