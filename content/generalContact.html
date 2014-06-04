@@ -1,0 +1,85 @@
+<table width="100%" border="0" cellspacing="1" cellpadding="4">
+              <tr>
+                
+                <td width="72%" rowspan="2" valign="top"><h2>General Contact Information</h2>
+                  
+                  <table width="100%" border="0" cellspacing="5" cellpadding="0">
+          <tr>
+           <br />
+         <td width="32%" valign="top"><div class="sideBar"><h2>Georgetown</h2>
+           <p>Telephone House<br />
+             79 Brickdam, Stabroek<br />
+             Georgetown<br />
+             Telephone numbers:	2251315<br />
+         </p>
+           <p> 69 Brickdam, Stabroek<br />
+             Tel:  225-1971, 227-4868</p>
+           <h2>Beterverwagting </h2>
+           <p>BV Business Office,<br />
+             East Coast Demerara<br />
+            Tel: 220-1873, 220-1874</p>
+           <h2>New Amsterdam </h2>
+           <p> 5 Strand Avenue,<br />
+             New Amsterdam,<br />
+             Berbice<br />
+             Tel: 333-4956 </p>
+            <h2>Linden </h2>
+            <p> 5 Yuraballi St., Retrieve<br />
+             Tel: 444-6636 </p>
+            <h2>Essequibo </h2>
+            <p>Anna Regina<br />
+             Tel: 771-5033</p>
+            <p><br />
+              <br />
+            </p>
+         </div></td>
+          <td width="68%" valign="top">
+          <h3>Business Hours</h3>
+            
+            <p>Monday to Friday, 8:00 to16:30 hrs. <br />
+              <br />
+              <strong>Collections Office Church Street</strong>: <br />
+              Monday to Friday, 07:30 to 17:00 hrs and Saturdays 07:00 to 14:00 hrs </p>
+<h3>Online Contact Form</h3>
+            <form action="scripts/contactscript.php" method="POST" name="contactform" id="formID">
+              <span>Fields marked (<span class="redText">*</span>) are required.</span>
+              <table width="100%" border="0" cellpadding="6" cellspacing="0" bgcolor="#F5F5F5">
+                <tr>
+                  <td width="30%" scope="col"><div align="left"><span class="redText">*</span>Full Name:</div></td>
+          <td width="70%" scope="col"><div align="left">
+            <input name="ContactPerson" type="text" id="ContactPerson" size="50" class="validate[required,custom[onlyLetterSp]] text-input"/>
+            </div></td>
+        </tr>
+                
+                <tr>
+                  <td><div align="left"><span class="redText">*</span>E-mail Address:</div></td>
+          <td><div align="left">
+            <span>
+              <input name="ContactEmail" type="text" id="ContactEmail" size="50" class="validate[required,custom[email]] text-input"/>
+                </span></div></td>
+        </tr>
+                <tr>
+                  <td><div align="left"><span class="redText">*</span>Telephone:</div></td>
+          <td><div align="left">
+            <span>
+              <input name="Telephone" type="text" id="Telephone" size="50" class="validate[required,custom[phone]] text-input"/>
+                </span></div></td>
+        </tr>
+                <tr>
+                  <td>What is 4 + 7 = </td>
+                  <td>
+<input name="captcha" id="captcha" maxlength="2" type="text" class="validate[required,custom[integer],min[11],max[11]] text-input"/></td>
+                </tr>
+              </table>
+      <p><span>Message:<br>
+          <textarea name="Message" cols="70" rows="6" id="Message" class="validate[required] text-input"></textarea>
+        </span>
+        <p><span><input name="token" type="hidden" value="mehghlkmuoij" />
+          <input name="submit" type="submit" id="btnSubmit" value="Send Message" >
+      </span>
+            </form></td>
+          </tr>
+        </table>        </td>
+              </tr>
+              <tr>              </tr>
+</table>

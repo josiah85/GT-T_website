@@ -1,0 +1,150 @@
+<h2>Application for Mobile GSM Service</h2>
+<form action="?page=mobile&node=application&process=yes" method="post" enctype="application/x-www-form-urlencoded" name="formID" id="formID">
+<table align="center" class="tableDotTop" width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><em><strong>User Information</strong></em></td>
+    <td colspan="2" valign="top" bgcolor="#FFFDD9"><em><strong>If for business, fill this area.</strong></em></td>
+  </tr>
+  <tr>
+    <td width="24%" valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>First Name:</td>
+    <td width="26%" valign="top" bgcolor="#F2FFF2"><label for="fname"></label>
+      <input type="text" name="fname" id="fname" class="validate[required,custom[onlyLetterSp]] text-input"></td>
+    <td width="25%" valign="top" bgcolor="#FFFDD9">Company's Name:</td>
+    <td width="25%" valign="top" bgcolor="#FFFDD9"><label for="companyname"></label>
+      <input type="text" name="companyname" id="companyname"></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>Last Name:</td>
+    <td valign="top" bgcolor="#F2FFF2"><label for="lname"></label>
+      <input type="text" name="lname" id="lname" class="validate[required,custom[onlyLetterSp]] text-input"></td>
+    <td valign="top" bgcolor="#FFFDD9">Company's Address:</td>
+    <td valign="top" bgcolor="#FFFDD9"><label for="companyaddress"></label>
+      <input type="text" name="companyaddress" id="companyaddress"></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>Billing Address:</td>
+    <td valign="top" bgcolor="#F2FFF2"><label for="billingaddress"></label>
+      <input type="text" name="billingaddress" id="billingaddress" class="validate[required]"></td>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>ID Type:</td>
+    <td valign="top" bgcolor="#F2FFF2"><select name="idtype" id="idtype" class="validate[required]">
+      <option value="">Select One</option>
+      <option value="National Identification">National Identification</option>
+      <option value="Passport">Passport</option>
+      <option value="TIN">TIN</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>Person(s) authorised to make changes:</td>
+    <td valign="top" bgcolor="#F2FFF2"><input type="text" name="personauth" id="personauth" class="validate[required,custom[onlyLetterSp]] text-input"></td>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>ID Number:</td>
+    <td valign="top" bgcolor="#F2FFF2"><input type="text" name="idnumber" id="idnumber" class="validate[required]"></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF">I want service with 
+      
+      <label>
+        <input type="radio" name="servicewith" value="myphone" id="servicewith_0">
+        My Phone</label>
+      
+      <label>
+        <input type="radio" name="servicewith" value="gttphone" checked id="servicewith_1">
+        GT&T Phone</label>
+      <br>
+      </td>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF">International  
+      
+      <input type="checkbox" name="iddd" id="iddd" value="yes"><label>Dialing</label>
+      | 
+      <input name="roaming" id="roaming" type="checkbox" value="yes" >
+      <label>Roaming</label></td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF"><strong><em>Billing Plan:
+        </em></strong>
+      <em>
+      <label></label>
+      </em>
+      <label><br>
+          <input type="radio" name="servicetype" value="prepaid" checked id="servicetype_0">
+        <strong>Pre-Paid</strong></label>
+      
+        <label>
+          <input type="radio" name="servicetype" value="postpaid" id="servicetype_1">
+          <strong>Post Paid</strong></label>
+       
+      
+        <label>
+  
+        | 
+        <input type="radio" name="plans" value="CPP" checked id="plans_0">
+        <span class="CPP">CPP</span></label>
+     
+      <label>
+        <input type="radio" name="plans" value="RPP" id="plans_1">
+        <span class="RPP">RPP</span></label>
+      
+      
+        <br>
+        <label>
+          <input type="radio" name="plans_sub" value="A" checked id="plans_sub_0">
+         
+          A</label>
+       
+        <label>
+          <input type="radio" name="plans_sub" value="B" id="plans_sub_1">
+          B</label>
+       
+        <label>
+          <input type="radio" name="plans_sub" value="C" id="plans_sub_2">
+          C</label>
+     
+        <label>
+          <input type="radio" name="plans_sub" value="D" id="plans_sub_3">
+          D</label>
+       
+</td>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF"><strong><em>Features:</em></strong><br>
+      <input type="checkbox" name="sms" id="sms" value="yes">
+      <label for="sms"><span class="SMS">SMS</span></label> | 
+        <input type="checkbox" name="mms" id="mms" value="yes">
+     <span class="MMS">MMS</span> | 
+      <input type="checkbox" name="voicemail" id="voicemail" value="yes">
+      Voicemail | 
+      <input type="checkbox" name="callwaiting" id="callwaiting" value="yes">
+      Call Waiting<br>
+      <input type="checkbox" name="gprs" id="gprs" value="yes">
+      GPRS | 
+      <input type="checkbox" name="callforwarding" id="callforwarding" value="yes">
+      Call Forwarding | 
+      <input type="checkbox" name="way3call" id="way3call" value="yes">
+      3-way Calling</td>
+  </tr>
+  <tr>
+    <td colspan="4" valign="top" bgcolor="#F0F3FF"> <span><strong><em>Terms &amp; Conditions:</em></strong><br>
+     The parties, their heirs and assignees hereby agree to abide by the terms and conditions of the agreement
+      And of the General Regulations set out in GT&amp;T' s Guyana Telephone Directory (a copy of which is also
+      available at the Commercial Offices of the Company and filled with the Public Utilities Commission). The
+      undersigned also expressly agree not to use or permit anyone else to use, in any way the cellular
+      equipment, facilities or services provided by GT&amp;T in any manner or form that may contravene the terms
+      of GT&amp;T' s License granted pursuant to the Telecommunications Act 1990 or violate any of the provisions
+      of the Telecommunication Act of 1990 or of the PUC Act 1990.      
+    </span></td>
+   
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>Contact Telephone:</td>
+    <td valign="top" bgcolor="#F0F3FF"><label for="contactTel"></label>
+      <input type="text" name="contactTel" id="contactTel" class="validate[required,custom[phone]] text-input"></td>
+    <td colspan="2" align="center"valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>I agree to the terms and conditions:
+      <input type="checkbox" name="agree" id="agree" class="validate[required]" >
+      <label for="agree"></label></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>Contact E-mail:</td>
+    <td valign="top" bgcolor="#F0F3FF"><label for="contactEmail"></label>
+      <input type="text" name="contactEmail" id="contactEmail" class="validate[required,custom[email]] text-input"></td>
+    <td colspan="2" align="center"valign="top" bgcolor="#F0F3FF"><input name="token" type="hidden" value="ybixseikavve" /><input type="submit" name="submit" id="submit" value="Apply"> | <span class="redText">*[required fields]</span></td>
+  </tr>
+</table>
+</form>
+<div><img src="img/pdfIcon.gif" width="24" height="20"> Download: <a href="data/forms/postpaidgsm.pdf" target="_blank">Post Paid Application</a> | <a href="data/forms/prepaidgsm.pdf" target="_blank">Pre-Paid Application</a> | <a href="data/forms/landlines_terms.pdf" target="_blank">Terms and Conditions</a></div>
