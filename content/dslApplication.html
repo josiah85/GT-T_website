@@ -1,0 +1,133 @@
+<h2>Application for DSL Service</h2>
+<form action="?page=internet&node=application&process=yes" method="post" enctype="application/x-www-form-urlencoded" name="formID" id="formID">
+<table align="center" class="tableDotTop" width="100%" border="0" cellspacing="2" cellpadding="2">
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F2FFF2"><em><strong>User Information:</strong></em></td>
+    <td colspan="2" valign="top" bgcolor="#FFFDD9"><em><strong>If for business, fill this area:</strong></em></td>
+  </tr>
+  <tr>
+    <td width="24%" valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>First Name:</td>
+    <td width="26%" valign="top" bgcolor="#F2FFF2"><label for="fname"></label>
+      <input type="text" name="fname" id="fname" class="validate[required,custom[onlyLetterSp]] text-input"></td>
+    <td width="25%" valign="top" bgcolor="#FFFDD9">Company's Name:</td>
+    <td width="25%" valign="top" bgcolor="#FFFDD9"><label for="companyname"></label>
+      <input type="text" name="companyname" id="companyname"></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>Last Name:</td>
+    <td valign="top" bgcolor="#F2FFF2"><label for="lname"></label>
+      <input type="text" name="lname" id="lname" class="validate[required,custom[onlyLetterSp]] text-input"></td>
+    <td valign="top" bgcolor="#FFFDD9">Company's Address:</td>
+    <td valign="top" bgcolor="#FFFDD9"><label for="companyaddress"></label>
+      <input type="text" name="companyaddress" id="companyaddress"></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>Billing Address:</td>
+    <td valign="top" bgcolor="#F2FFF2"><label for="billingaddress"></label>
+      <input type="text" name="billingaddress" id="billingaddress" class="validate[required]"></td>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>ID Type:</td>
+    <td valign="top" bgcolor="#F2FFF2"><select name="idtype" id="idtype" class="validate[required]">
+      <option value="">Select One</option>
+      <option value="National Identification">National Identification</option>
+      <option value="Passport">Passport</option>
+      <option value="TIN">TIN</option>
+    </select></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2FFF2">Service/Installation Address (if different):</td>
+    <td valign="top" bgcolor="#F2FFF2"><input type="text" name="installationaddress" id="installationaddress" /></td>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>ID Number:</td>
+    <td valign="top" bgcolor="#F2FFF2"><input type="text" name="idnumber" id="idnumber" class="validate[required]"></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2FFF2"><span class="redText">*</span>Person(s) authorised to make changes:</td>
+    <td valign="top" bgcolor="#F2FFF2"><label for="installationaddress"></label>
+      <input type="text" name="personauth" id="personauth" class="validate[required,custom[onlyLetterSp]] text-input" /></td>
+    <td valign="top" bgcolor="#F2FFF2">&nbsp;</td>
+    <td valign="top" bgcolor="#F2FFF2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF"><strong><em>DSL Service Details:</em></strong><br>
+      </td>
+    <td colspan="2" valign="top" bgcolor="#F0F3FF"><strong><em>Required Documentation</em></strong></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>DSL Line Number:</td>
+    <td valign="top" bgcolor="#F0F3FF"><label for="linenum"></label>
+      <input type="text" name="linenum" id="linenum" class="validate[required,custom[phone]] text-input" /></td>
+    <td valign="top" bgcolor="#F0F3FF">Authority to bind a Company:</td>
+    <td valign="top" bgcolor="#F0F3FF"><input type="checkbox" name="bind" id="bind" value="YES"/>
+      <label for="bind"></label></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F0F3FF">Terminates on PABX/Key System:</td>
+    <td valign="top" bgcolor="#F0F3FF">
+      <label>
+        <input type="radio" name="pbx" value="yes" id="linetermination_0" />
+        yes</label>
+      <br />
+      <label>
+        <input type="radio" name="pbx" value="no" checked="checked" id="linetermination_1" />
+        no</label>
+      </td>
+    <td valign="top" bgcolor="#F0F3FF">DSL Line in Name of Phone Account?</td>
+    <td valign="top" bgcolor="#F0F3FF">
+      <label>
+        <input type="radio" name="nameondsl" value="yes" checked="checked" id="nameondsl_0" />
+        yes</label>
+      <br />
+      <label>
+        <input type="radio" name="nameondsl" value="no" id="nameondsl_1" />
+        no</label>
+      </td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F0F3FF">Install Type:</td>
+    <td valign="top" bgcolor="#F0F3FF"><select name="installtype" id="installtype" class="validate[required]"><option value="">Select One</option><option value="GTT">GT&amp;T</option><option value="Self">Self</option><option value="GTT Agent">GT&amp;T Agent</option></select></td>
+    <td valign="top" bgcolor="#F0F3FF">If GT&amp;T Agent, please state:</td>
+    <td valign="top" bgcolor="#F0F3FF"><label for="installagent"></label>
+      <input type="text" name="installagent" id="installagent" /></td>
+  </tr>
+  <tr>
+    <td valign="top" colspan="4" bgcolor="#F0F3FF"><strong><em>Account Options (hover over to see details): <br />
+    </em></strong>
+        <label>
+          <input type="radio" name="accountoptions" value="DSL Lite" id="accountoptions_0" />
+          <span class="lite">DSL Lite</span></label>
+        |
+        <label>
+          <input type="radio" name="accountoptions" value="DSL Standard" checked="checked" id="accountoptions_1" />
+          <span class="standard">DSL Standard</span></label>
+        |
+        <label>
+          <input type="radio" name="accountoptions" value="Business DSL Basic" id="accountoptions_2" />
+          <span class="basic">Business DSL Basic</span></label>
+        |
+        <label>
+          <input type="radio" name="accountoptions" value="Business DSL Standard" id="accountoptions_3" />
+          <span class="bstandard">Business DSL Standard</span></label></td>
+
+    
+  </tr>
+  <tr>
+    <td colspan="4" valign="top" bgcolor="#F0F3FF"> <span><strong><em>Terms &amp; Conditions:</em></strong><br>
+    Please click here to read terms and conditions. [&lt;&lt; to include link]</span></td>
+   
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>Contact Telephone:</td>
+    <td valign="top" bgcolor="#F0F3FF"><label for="contactTel"></label>
+      <input type="text" name="contactTel" id="contactTel" class="validate[required,custom[phone]] text-input"></td>
+    <td colspan="2" align="center"valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>I agree to the terms and conditions:
+      <input type="checkbox" name="agree" id="agree" class="validate[required]" >
+      <label for="agree"></label></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F0F3FF"><span class="redText">*</span>Contact E-mail:</td>
+    <td valign="top" bgcolor="#F0F3FF"><label for="contactEmail"></label>
+      <input type="text" name="contactEmail" id="contactEmail" class="validate[required,custom[email]] text-input"></td>
+    <td colspan="2" align="center"valign="top" bgcolor="#F0F3FF"><input name="token" type="hidden" value="advkmpxthluj" /><input type="submit" name="submit" id="submit" value="Apply"> | <span class="redText">*[required fields]</span></td>
+  </tr>
+</table>
+</form>
+<div><img src="images/pdfIcon.gif" width="24" height="20"> Download: <a href="data/forms/dsl.pdf" target="_blank">Application Form</a> | <a href="data/forms/aup.pdf" target="_blank">Acceptable User Policy</a> | <a href="data/forms/dsl_terms.pdf" target="_blank">Terms &amp; Conditions</a></div>

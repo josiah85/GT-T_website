@@ -1,0 +1,58 @@
+<h2>
+		Fault Reporting</h2>
+        <img align="middle" src="img/supportimage.jpg" width="675" height="162" class="img-responsive"/>
+          <span></span>
+         <form action="?page=support&node=fault&report=send" method="POST" name="contactform" id="formID" enctype="multipart/form-data">
+           <div>Message:<br>
+          <textarea name="Message" cols="75" rows="6" id="Message" class="validate[required] text-input">Dear GT&amp;T,</textarea>
+        </div>
+       <span>
+           <table width="90%" border="0" cellpadding="6" cellspacing="0" bgcolor="#F5F5F5">
+             <tr>
+               <td width="38%" scope="col"><div align="left"><span class="redText">*</span>Department (fault type):</div></td>
+          <td scope="col"><div align="left">
+            <select name="type" id="type" class="validate[required]">
+            <option value="">You must select a product or service from this list.</option>
+            <option value="Billing">Billing</option><option value="DSL Services">DSL Services</option><option value="Land Lines">Land Lines</option><option value="Mobile Communication">Mobile Communication</option>            </select>
+            </div></td>
+        </tr>
+             <tr>
+                  <td width="30%" scope="col"><div align="left"><span class="redText">*</span>Full Name:</div></td>
+          <td width="70%" scope="col"><div align="left">
+            <input name="ContactPerson" type="text" id="ContactPerson" size="50" class="validate[required,custom[onlyLetterSp]] text-input"/>
+            </div></td>
+        </tr>
+               <tr>
+                  <td width="30%" scope="col"><div align="left">Name of Business/Organisation [<span class="redText">optional</span>]:</div></td>
+          <td width="70%" scope="col"><div align="left">
+            <input name="BusinessName" type="text" id="BusinessName" size="50" />
+            </div></td>
+        </tr> 
+                <tr>
+                  <td><div align="left"><span class="redText">*</span>E-mail Address:</div></td>
+          <td><div align="left">
+            <span>
+              <input name="ContactEmail" type="text" id="ContactEmail" size="50" class="validate[required,custom[email]] text-input"/>
+                </span></div></td>
+        </tr>
+                <tr>
+                  <td><div align="left"><span class="redText">*</span>Telephone:</div></td>
+          <td><div align="left">
+            <span>
+              <input name="Telephone" type="text" id="Telephone" size="50" class="validate[custom[phone]] text-input"/>
+                </span></div></td>
+        </tr>
+                <tr>
+                  <td><div align="left">Reference Number [<span class="redText">if any</span>]</div></td>
+                  <td><div align="left"><input name="ref" type="text" id="ref" size="50" /></div></td>
+                </tr>
+                <tr>
+                  <td>What is 4 + 7 = </td>
+                  <td>
+<input name="captcha" id="captcha" maxlength="2" type="text" class="validate[required,custom[integer],min[11],max[11]] text-input"/></td>
+                </tr>
+           </table>
+   <input name="token" type="hidden" value="zqwplsxizsyv" />
+          <input name="submit" type="submit" id="btnSubmit" value="Submit Report" >
+      </span>
+          </form> <br />

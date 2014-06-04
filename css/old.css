@@ -327,19 +327,19 @@ text-align:center; }*/
 	background-color: #FF0;
 	cursor:default;
 }*/
-/*.yellowpages fieldset {
+.yellowpages fieldset {
 	background-color:#FF0;
 	font-weight:bold;
 	color:#666;
 	padding: 0px;
-}*/
+}
 
-/*.yellowOR {
+.yellowOR {
 	font-weight:bold;
 	font-size:18px;
 	padding: 0px 15px;
 	color:#F00;
-}*/
+}
 
 /*.sideBar h2 {
 	font-size: 14px;
