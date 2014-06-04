@@ -31,6 +31,7 @@ $(window).bind('hashchange', function() {
             $('#bottomid').load('content/sitemap.html');
             // hash found
             $('.nav-link').hide();
+            $('html, body').animate({ scrollTop: 0 }, 0);
         } else {
             // No hash found
             location.reload();
