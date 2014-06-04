@@ -113,6 +113,9 @@ body, h1, h2, h3, h4, h5, h6 {
 .about p:last-child {
   margin-bottom: 4em;
 }
+.about{
+  border-top: 25px solid #D8D8D8;
+}
 footer {
   background: #111;
   color: #fff;

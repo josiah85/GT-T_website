@@ -11,7 +11,7 @@ $(function()
         $('#contentid').load('content/' + hash + '.html');
 
         $('#wellid').load('content/empty.html');
-        $('#bottomid').load('content/empty.html');
+        $('#bottomid').load('content/sitemap.html');
         $('.nav-link').hide();
         // hash found
     }
@@ -28,7 +28,7 @@ $(window).bind('hashchange', function() {
             $('#contentid').load('content/' + hash + '.html');
 
             $('#wellid').load('content/empty.html');
-            $('#bottomid').load('content/empty.html');
+            $('#bottomid').load('content/sitemap.html');
             // hash found
             $('.nav-link').hide();
         } else {

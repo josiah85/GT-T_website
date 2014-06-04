@@ -83,3 +83,67 @@ td, th {
   border: 1px solid #ccc; 
   text-align: left; 
 }
+
+.sitemap a {
+	color:gray;
+	font-size: 0.85em;
+}
+.sitemap h5 {
+	color: #555;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.sitemap {
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+
+#div-table {
+    background: #ccc;
+    display: table;
+    width: 100%;
+}
+#table-left, #table-right {
+    display: table-cell
+}
+#table-left {
+
+}
+#table-right {
+    border: 3px solid #000
+}
+
+.table-cell {
+	display: table-cell;
+}
+.sitemap-container {
+	margin:0px;
+	width:100%;
+}
+
+.sitemap-center {
+	padding-left: 20%;
+}
+
+.sitemap-dividerR {
+	box-sizing: border-box;
+	border-right: 1px dotted #999;
+	height: 320px;
+}
+
+@media screen and (max-width: 767px) {
+	.sitemap-dividerR {
+		box-sizing: border-box;
+		border-right: 1px dotted #999;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.sitemap-dividerR {
+		box-sizing: border-box;
+		border-right: 1px dotted #999;
+		height: 320px;
+	}
+}
