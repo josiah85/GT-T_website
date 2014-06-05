@@ -8,5 +8,14 @@
   "description": "GTT",
   "main": "index.html",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1.1",
+    "respond": "~1.4.2",
+    "font-awesome": "~4.1.0"
+  },
+  "resolutions": {
+    "font-awesome": "3.2.1"
+  }
 }
