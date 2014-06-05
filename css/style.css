@@ -1,3 +1,11 @@
+#maxmin {
+    max-width: 2000px;
+    min-width: 320px;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+}
+
 #div-table {
 background:#ccc;
 display:table;
