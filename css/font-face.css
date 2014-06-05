@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'BEBAS';
-    src: url(../fonts/BEBAS___.ttf);
+    src: url(../font/BEBAS___.ttf);
     font-weight:400;
 }
 
 @font-face {
     font-family: 'NeonGlow';
-    src: url(../fonts/NeonGlow.ttf);
+    src: url(../font/NeonGlow.ttf);
 }
 
 @font-face {
     font-family: 'NeonGlow-ie';
-    src: url(../fonts/NeonGlow.eot);
+    src: url(../font/NeonGlow.eot);
 }
 
 @font-face {
     font-family: 'SinkinSans-100Thin';
-    src: url(../fonts/SinkinSans-100Thin.otf);
+    src: url(../font/SinkinSans-100Thin.otf);
 }
