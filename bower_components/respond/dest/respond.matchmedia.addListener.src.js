@@ -1,8 +1,3 @@
-/*! Respond.js v1.4.2: min/max-width media query polyfill
- * Copyright 2014 Scott Jehl
- * Licensed under MIT
- * http://j.mp/respondjs */
-
 /*! matchMedia() polyfill - Test a CSS media type/query in JS. Authors & copyright (c) 2012: Scott Jehl, Paul Irish, Nicholas Zakas. Dual MIT/BSD license */
 /*! NOTE: If you're already including a window.matchMedia polyfill via Modernizr or otherwise, you don't need this part */
 (function(w) {
@@ -26,6 +21,56 @@
   }(w.document);
 })(this);
 
+/*! matchMedia() polyfill addListener/removeListener extension. Author & copyright (c) 2012: Scott Jehl. Dual MIT/BSD license */
+(function(w) {
+  "use strict";
+  if (w.matchMedia && w.matchMedia("all").addListener) {
+    return false;
+  }
+  var localMatchMedia = w.matchMedia, hasMediaQueries = localMatchMedia("only all").matches, isListening = false, timeoutID = 0, queries = [], handleChange = function(evt) {
+    w.clearTimeout(timeoutID);
+    timeoutID = w.setTimeout(function() {
+      for (var i = 0, il = queries.length; i < il; i++) {
+        var mql = queries[i].mql, listeners = queries[i].listeners || [], matches = localMatchMedia(mql.media).matches;
+        if (matches !== mql.matches) {
+          mql.matches = matches;
+          for (var j = 0, jl = listeners.length; j < jl; j++) {
+            listeners[j].call(w, mql);
+          }
+        }
+      }
+    }, 30);
+  };
+  w.matchMedia = function(media) {
+    var mql = localMatchMedia(media), listeners = [], index = 0;
+    mql.addListener = function(listener) {
+      if (!hasMediaQueries) {
+        return;
+      }
+      if (!isListening) {
+        isListening = true;
+        w.addEventListener("resize", handleChange, true);
+      }
+      if (index === 0) {
+        index = queries.push({
+          mql: mql,
+          listeners: listeners
+        });
+      }
+      listeners.push(listener);
+    };
+    mql.removeListener = function(listener) {
+      for (var i = 0, il = listeners.length; i < il; i++) {
+        if (listeners[i] === listener) {
+          listeners.splice(i, 1);
+        }
+      }
+    };
+    return mql;
+  };
+})(this);
+
+/*! Respond.js v1.4.0: min/max-width media query polyfill. (c) Scott Jehl. MIT Lic. j.mp/respondjs  */
 (function(w) {
   "use strict";
   var respond = {};
@@ -57,23 +102,17 @@
       return;
     }
     req.send(null);
-  }, isUnsupportedMediaQuery = function(query) {
-    return query.replace(respond.regex.minmaxwh, "").match(respond.regex.other);
   };
   respond.ajax = ajax;
   respond.queue = requestQueue;
-  respond.unsupportedmq = isUnsupportedMediaQuery;
   respond.regex = {
     media: /@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,
     keyframes: /@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,
-    comments: /\/\*[^*]*\*+([^/][^*]*\*+)*\//gi,
     urls: /(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,
     findStyles: /@media *([^\{]+)\{([\S\s]+?)$/,
     only: /(only\s+)?([a-zA-Z]+)\s?/,
-    minw: /\(\s*min\-width\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/,
-    maxw: /\(\s*max\-width\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/,
-    minmaxwh: /\(\s*m(in|ax)\-(height|width)\s*:\s*(\s*[0-9\.]+)(px|em)\s*\)/gi,
-    other: /\([^\)]*\)/g
+    minw: /\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,
+    maxw: /\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/
   };
   respond.mediaQueriesSupported = w.matchMedia && w.matchMedia("only all") !== null && w.matchMedia("only all").matches;
   if (respond.mediaQueriesSupported) {
@@ -153,7 +192,7 @@
       }
     }
   }, translate = function(styles, href, media) {
-    var qs = styles.replace(respond.regex.comments, "").replace(respond.regex.keyframes, "").match(respond.regex.media), ql = qs && qs.length || 0;
+    var qs = styles.replace(respond.regex.keyframes, "").match(respond.regex.media), ql = qs && qs.length || 0;
     href = href.substring(0, href.lastIndexOf("/"));
     var repUrls = function(css) {
       return css.replace(respond.regex.urls, "$1" + href + "$2$3");
@@ -177,9 +216,6 @@
       eql = eachq.length;
       for (var j = 0; j < eql; j++) {
         thisq = eachq[j];
-        if (isUnsupportedMediaQuery(thisq)) {
-          continue;
-        }
         mediastyles.push({
           media: thisq.split("(")[0].match(respond.regex.only) && RegExp.$2 || "all",
           rules: rules.length - 1,
